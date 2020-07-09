@@ -56,6 +56,7 @@ function gitStatus() {
     ) {
       alert("X` Wins");
       round = 1;
+      location.reload()
     } else if (
       tictactoeCells[cell1].textContent === "O" &&
       tictactoeCells[cell2].textContent === "O" &&
@@ -63,9 +64,11 @@ function gitStatus() {
     ) {
       alert("O` Wins");
       round = 1;
+      location.reload()
     } else if (round === 10) {
       alert("Draw");
       round = 1;
+      location.reload()
     }
   });
 }
